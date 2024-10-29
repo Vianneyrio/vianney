@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <frameset rows="30%,70%">
+        <frame src="header.htm" name="header">
+        <frameset cols="30%,70%">
+            <frame src="sidebar.htm" name="sidebar">
+            <frame src="content.htm" name="content">
+        </frameset>
+    </frameset>
+    <noframes>
+        <body>
+            <h1>Votre navigateur ne supporte pas les frames.</h1>
+        </body>
+    </noframes>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">START</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" target="content">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ABOUT" target="content">ABOUT</a>
+                    </li>
+                    <!-- Ajoutez d'autres liens selon vos besoins -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h4>Pages</h4>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="vianney.php" target="content">Vianney</a></li>
+            <li class="list-group-item"><a href="page76.php" target="content">Page 76</a></li>
+            <li class="list-group-item"><a href="page76a.php" target="content">Page 76a</a></li>
+            <li class="list-group-item"><a href="vianney2.php" target="content">Vianney 2</a></li>
+            <li class="list-group-item"><a href="ecole.php" target="content">École</a></li>
+            <li class="list-group-item"><a href="CV.php" target="content">CV</a></li>
+            <li class="list-group-item"><a href="page77.php" target="content">FORMULAIRE</a></li>
+            <li class="list-group-item"><a href="tableau.html" target="content">TABLEAU</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contenu</title>
+</head>
+<body>
+    <div class="container">
+        <h4>Contenu</h4>
+        <div class="content" id="content">
+            <p>Cliquez sur une page dans la barre latérale pour afficher son contenu ici.</p>
+        </div>
+    </div>
+</body>
+</html>

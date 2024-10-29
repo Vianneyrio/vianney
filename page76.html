@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 76</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e9ecef;
+        }
+        .form-container {
+            margin: 50px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container form-container">
+    <h1>Questionnaire</h1>
+    <form method="post" action="traitement.php">
+        <div class="mb-4">
+            <label class="form-label">Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :</label><br />
+            <div>
+                <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br/>
+                <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br/>
+                <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br />
+                <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?!</label>
+            </div>
+        </div>
+        
+        <div class="mb-4">
+            <label class="form-label">Sur quel continent habitez-vous ?</label><br />
+            <div>
+                <input type="radio" name="continent" value="europe" id="europe" /> <label for="europe">Europe</label><br />
+                <input type="radio" name="continent" value="afrique" id="afrique" /> <label for="afrique">Afrique</label><br />
+                <input type="radio" name="continent" value="asie" id="asie" /> <label for="asie">Asie</label><br />
+                <input type="radio" name="continent" value="amerique" id="amerique" /> <label for="amerique">Amérique</label><br />
+                <input type="radio" name="continent" value="australie" id="australie" /> <label for="australie">Australie</label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
